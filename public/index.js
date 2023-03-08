@@ -1,3 +1,19 @@
+$('.toggle').click(function(e){
+  e.preventDefault(); // The flicker is a codepen thing
+  $(this).toggleClass('toggle-on');
+});
+
+var incognito=false;
+document.getElementById("switch").onclick = function() {
+ if (incognito===false) {
+    incognito=true;
+  }
+    else {
+  incognito=false;
+}
+ };
+
+
 "use strict";
 /**
  * @type {HTMLFormElement}
@@ -30,7 +46,11 @@ form.addEventListener("submit", async (event) => {
     errorCode.textContent = err.toString();
     throw err;
   }
-
   const url = search(address.value, searchEngine.value);
-  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+if (incognito===true) {
+  subject.insertAdjacentHTML('afterbegin', '<iframe src='+__uv$config.prefix + __uv$config.encodeUrl(url)+'></iframe>');
+}else{
+          location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  
+}
 });

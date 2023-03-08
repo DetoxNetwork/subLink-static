@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Ultraviolet | Sophisticated Web Proxy</title>
+    <title>subLink</title>
     <meta
       name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+      content="subLink is an ultramodern proxy used for evading internet censorship. subLink uses the highly sophisticated proxy, Ultaviolet, by the Titanium Network"
     />
     <meta
       name="keywords"
@@ -21,13 +21,34 @@
       content="#434c5e"
     />
     <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="Screen.svg">
     <link rel="stylesheet" href="index.css" />
-    <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
-    <script src="index.js" defer></script>
+
+    <link href="index.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="Screen.svg">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -60,61 +81,88 @@
         ]
       }
     </script>
+    <script async src="https://api.countapi.xyz/hit/detoxnetwork/3a67df84-f298-4a3c-bad6-ad1d5bd9b3af?callback=websiteVisits"></script>
   </head>
-
+  <code id="navbar"></code>
+  <script src="https://new-navbar.detoxnetwork.repl.co/index.min.js"></script>
   <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>Ultraviolet | TN</h1>
+    <div title="subLink Logo">
+      <img id="image-title" src="Screen.svg" alt="subLink"/>
+      <h1 title="subLink supports YouTube, GeForce NOW and more!"></h1>
+      <h1 id="title">subLink</h1>
     </div>
-    <div class="flex-center desc">
-      <p>
-        Ultraviolet is highly sophisticated proxy used for evading internet
-        censorship.
-      </p>
+    
+    <div title="subLink uses the the power of Ultraviolet to unblock websites!">
     </div>
-
-    <form id="uv-form" class="flex-center">
+    
+    <form id="uv-form">
       <input
         id="uv-search-engine"
         value="https://www.google.com/search?q=%s"
         type="hidden"
       />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
+      <input id="uv-address" onfocus="typing()" onblur="notTyping()" autocomplete="off" placeholder="Search the web freely">
+      <h2 id="proxyslogan">Ultramodern Web Proxy</h2>
+      <style>
+#proxyslogan{
+  text-align: middle;
+  opacity: 0.9;
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-top: 5%;
+  color: white;
+  transition-duration: 0.5s;
+  z-index: 50;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 55px;
+  background: linear-gradient(45deg, rgba(121,0,255,1) 0%, rgba(0,212,255,1) 100%);
+    -webkit-text-fill-color: transparent;
+  font-family: Montserrat;
+  -webkit-background-clip: text;
+  margin: 0 auto;
+  transition-duration: 0.5s;
+}
+        
+  #image-title {
+  margin: 0 auto;
+  vertical-align: middle;
+  border-width: 0;
+  border: 0;
+  width: 138px;
+  margin-bottom: -2%;
+  transition-duration: 0.5s;
+}
+      </style>
     </form>
-    <div class="desc left-margin">
-      <p id="uv-error"></p>
+        <p id="uv-error"></p>
       <pre id="uv-error-code"></pre>
+
+<div id="credits">
+  <a class="sources" href="https://github.com/DetoxNetwork/subLink">Source</a>
+  <a class="sources" href="https://raw.githubusercontent.com/DetoxNetwork/subLink/main/credits.md">Credits</a>
+</div>
+    
+    <img alt="Incognito Image" id="incognito" src="chrome.png">
+
+  <div class='toggle' id='switch'>
+      <div class='toggle-text-off'>OFF</div>
+      <div class='glow-comp'></div>
+      <div class='toggle-button'></div>
+      <div class='toggle-text-on'>ON</div>
     </div>
-    <footer>
-      <a
-        title="The TitaniumNetwork GitHub organization"
-        href="https://github.com/titaniumnetwork-dev"
-        >TitaniumNetwork</a
-      >
-      <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-        >Discord</a
-      >
-      <a
-        title="The TompHTTP GitHub organization"
-        href="https://github.com/tomphttp"
-        >TompHTTP</a
-      >
-      <a
-        title="The official deployment repository for Ultraviolet"
-        href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-        >GitHub</a
-      >
-      <a
-        title="License information"
-        href="credits.html"
-        style="margin-left: auto"
-        >Credits</a
-      >
-      <span>Ultraviolet &copy; TN 2023</span>
-    </footer>
+<code id="subject"></code>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script async src="https://arc.io/widget.min.js#EfR33sKm"></script>
+        <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js"></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script type="application/ld+json"></script>
   </body>
 </html>
+
